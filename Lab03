@@ -1,0 +1,101 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab03_NatashaOstrander
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // #2 - check speed versus speedLimit
+            int speedLimit = 35;
+            int speed = 42;
+            if (speed > speedLimit)
+            { // Beginning speed checking
+                Console.WriteLine("SLOW NOW");
+            }  // Ending speed checking
+
+
+            // End assignment #2
+            Console.WriteLine("");
+
+
+            // #3 - if/else comparison - Boolean
+            Boolean isTrue = false;
+            if (isTrue == true)
+            {
+                Console.WriteLine("It is true!");
+            }
+            else if (isTrue == false)
+            {
+                Console.WriteLine("It is false!");
+            }
+
+            Console.WriteLine("");
+
+            // End assignment #3
+
+            // #4 - converts Fahrenheit to Celcius 
+            // Gets the temperature from the user
+            Console.WriteLine("Enter Temperature in Fahrenheit: ");
+            double fahrenheit = Convert.ToDouble(Console.ReadLine());
+
+            // Converts the entered temperature to Celsius
+            double celsius = (fahrenheit - 32d) * 5d / 9d;
+
+            // Checks the temperature to determine if it is hot or cold
+            if (fahrenheit < 40)
+            {
+                Console.WriteLine("It is cold");
+            }
+            else if (fahrenheit > 90)
+            {
+                Console.WriteLine("It is hot");
+            }
+
+            // Outputs the temperature in Celsius
+            Console.WriteLine("Temperature in Celsius is: " + celsius);
+
+            Console.WriteLine("");
+            // End assignment #4
+
+            // #5 - While loop to output numbers 1 - 10 by +1
+            var loop5 = 1;
+            while (loop5 <= 10)
+            {
+                Console.WriteLine("Loop 5");
+                Console.WriteLine(loop5);
+                loop5++;
+            }
+            Console.WriteLine("");
+            // End assignment #5
+
+            // #6 - While loop to output numbers 60 - 20 by -1
+            var loop6 = 60;
+            while (loop6 >= 20)
+            {
+                Console.WriteLine("Loop 6");
+                Console.WriteLine(loop6);
+                loop6--;
+            }
+            Console.WriteLine("");
+            // End assignment #6
+
+            // #7 - While loop to output numbers 10 - 20 by +1
+            var loop7 = 10;
+            while (loop7 <= 20)
+            {
+                Console.WriteLine("Loop 7");
+                Console.WriteLine(loop7);
+                loop7++;
+            }
+            // End assignment #7
+
+
+
+        }
+    }
+}
